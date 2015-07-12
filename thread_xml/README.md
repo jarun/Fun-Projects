@@ -1,4 +1,4 @@
-# Fun calculator  
+# XML parsing in threads  
   
 Problem statement: XML Parsing with Multithreading.
 
