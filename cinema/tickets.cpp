@@ -98,7 +98,8 @@ bool sell_ticket()
 		/* This works because current limits are integers.
 		   Need to take floor() of LIMIT1 & LIMIT2 for real type limits. */
 		if (filled == float(LIMIT1) || filled == float(LIMIT2)) {
-			i = ++i % 8;
+			++i;
+			i %= 8;
 			current = &rooms[i];
 		} else if (filled == float(HOUSEFULL)) {
 			if (++i == 8)

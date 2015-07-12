@@ -78,7 +78,7 @@ void print_element_names(xmlDoc* doc, xmlNode * a_node, char* buf)
 	}
 }
  
-void *thr_func(void *arg)
+void *thr_func()
 {
 	xmlDoc *doc = NULL;
 	xmlNode *root_element = NULL;
@@ -111,7 +111,7 @@ void *thr_func(void *arg)
 	free(buf);
 }
  
-int main(int argc, char **argv)
+int main()
 {
 	pthread_t thr[NUM_THREADS];
 	int i, rc;

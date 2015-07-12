@@ -3,9 +3,10 @@ CFLAGS = -W -Wall -Werror -g
 
 all: calc
 
-calc: calc.c
-	gcc $(CFLAGS) -o calc calc.c
+calc:
+	$(CC) $(CFLAGS) -o calc calc.c
+	strip calc
 
 .PHONY: clean
 clean:
-	-rm -f calc
+	rm -f calc
