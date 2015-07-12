@@ -1,4 +1,4 @@
-# Fun calculator  
+# Balanced ticket sale in cinema  
   
 Problem statement: Write a program that simulates an electronic calculator. The program should follow these rules:  
   
