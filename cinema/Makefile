@@ -1,6 +1,6 @@
 CC = g++
 
-CFLAGS = -W -Wall -Werror -g
+CFLAGS = -Wall -Wextra -Werror -g
 
 all: tickets
 
