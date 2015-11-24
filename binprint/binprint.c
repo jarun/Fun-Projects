@@ -44,9 +44,9 @@ void printbin(long long val)
 
 	count++;
 
-	if (val) {
+	if (val)
 		printf("OVERFLOW %s", binstr + count);
-	} else
+	else
 		printf("%s", binstr + count);
 }
 
