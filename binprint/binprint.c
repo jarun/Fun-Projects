@@ -31,9 +31,10 @@ void printbin(long long val)
 		return;
 	}
 
+	/* If negative, get the 2's complement */
 	if (val < 0) {
 		printf("-0b");
-		val = ~val + 1; // Get the 2's complement of the number
+		val = ~val + 1;
 	} else
 		printf("0b");
 
