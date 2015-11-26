@@ -33,8 +33,9 @@ void printbin(long long val)
 
 	/* If negative, get the 2's complement */
 	if (val < 0) {
-		printf("-0b");
 		val = ~val + 1;
+		if (val > 0)
+			printf("-0b");
 	} else
 		printf("0b");
 
@@ -45,10 +46,7 @@ void printbin(long long val)
 
 	count++;
 
-	if (val)
-		printf("OVERFLOW %s", binstr + count);
-	else
-		printf("%s", binstr + count);
+	printf("%s", binstr + count);
 }
 
 int main(int argc, char **argv)
