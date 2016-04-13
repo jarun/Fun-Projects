@@ -6,4 +6,4 @@
 
 **GPLv3**
 
-Copyright (2015) [Arun Prakash Jana](engineerarun@gmail.com)
+Copyright (C) 2015 [Arun Prakash Jana](engineerarun@gmail.com)
