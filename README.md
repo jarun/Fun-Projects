@@ -10,9 +10,10 @@ Current entries:
 5. **thread_xml:** read XML file using multiple threads and print elements and values using libxml
 6. **tictactoe:** checks if a Tic-Tac-Toe game is solved using bitwise operations
 
+## License
 ![GPLv3](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/GPLv3_Logo.svg/200px-GPLv3_Logo.svg.png)
 
 Copyright (C) 2015 [Arun Prakash Jana](mailto: engineerarun@gmail.com).
 
-# Developer
+## Developer
 - [Arun Prakash Jana](mailto: engineerarun@gmail.com)

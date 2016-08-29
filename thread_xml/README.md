@@ -1,5 +1,5 @@
-# XML parsing in threads  
-  
+# XML parsing in threads
+
 Problem statement: XML Parsing with Multithreading.
 
 Write a program that will parse the following XML document. (The program may use any XML library/tools you wish.) The program should work as follows:
@@ -13,13 +13,13 @@ The XML document is below. Each worker should go through the document, find each
 
 Example:
 
-"Worker threadID 0x3382: Found car with ID 2343, Color Blue, Year 1998, Make Chevrolet, Model Aveo"  
-"Worker threadID 0x3382: Found car with ID 2659, Color Red, Year 2001, Make Dodge, Model Ram"  
-"Worker threadID 0x1639: Found car with ID 2343, Color Blue, Year 1998, Make Chevrolet, Model Aveo"  
+"Worker threadID 0x3382: Found car with ID 2343, Color Blue, Year 1998, Make Chevrolet, Model Aveo"
+"Worker threadID 0x3382: Found car with ID 2659, Color Red, Year 2001, Make Dodge, Model Ram"
+"Worker threadID 0x1639: Found car with ID 2343, Color Blue, Year 1998, Make Chevrolet, Model Aveo"
 
 
-XML file: input.xml  
-  
-# License  
-  
+XML file: input.xml
+
+## License
+
 GPLv3.0
