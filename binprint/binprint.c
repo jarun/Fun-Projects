@@ -58,7 +58,7 @@ int main(int argc, char **argv)
 		return 0;
 	}
 
-	val = atoll(argv[1]);
+	val = strtoll(argv[1], NULL, 0);
 	printbin(val);
 
 	return 0;
