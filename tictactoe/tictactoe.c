@@ -3,18 +3,18 @@
  * Uses bitwise operators heavily
  *
  * Author: Arun Prakash Jana <engineerarun@gmail.com>
- * Copyright (C) 2014, 2015 by Arun Prakash Jana <engineerarun@gmail.com>
+ * Copyright (C) 2014 by Arun Prakash Jana <engineerarun@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with Fun-Projects.  If not, see <http://www.gnu.org/licenses/>.
  */
@@ -29,7 +29,7 @@
 #define CROSS 0b10
 #define INVALID 0b11
 
-/* 
+/*
  * Structure to hold the states of 1 row
  * Each square is denoted by 2 bits for 3 states: Empty, Tick, Cross
  * The last two bits of each member (row) is ignored
@@ -41,7 +41,7 @@ typedef struct {
 	unsigned char row3;
 } state;
 
-/* 
+/*
  * Takes the current state of the board as input
  * Updates won with the sign that won the game if it's solved
  * Can be optimized if the currently filled square is taken as input
@@ -139,6 +139,6 @@ int main()
 	} else {
 		printf("Not solved yet\n");
 	}
-	
+
 	return 0;
 }

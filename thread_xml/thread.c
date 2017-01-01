@@ -3,7 +3,7 @@
  * and print all the elements and values
  *
  * Author: Arun Prakash Jana <engineerarun@gmail.com>
- * Copyright (C) 2014, 2015 by Arun Prakash Jana <engineerarun@gmail.com>
+ * Copyright (C) 2014 by Arun Prakash Jana <engineerarun@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@
 #include <unistd.h>
 #include <sys/syscall.h>
 #include <string.h>
- 
+
 #define NUM_THREADS 3
 
 /* shared data between threads */
@@ -77,7 +77,7 @@ void print_element_names(xmlDoc* doc, xmlNode * a_node, char* buf)
         	print_element_names(doc, cur_node->children, buf);
 	}
 }
- 
+
 void *thr_func()
 {
 	xmlDoc *doc = NULL;
@@ -101,7 +101,7 @@ void *thr_func()
 	}
 
 	root_element = xmlDocGetRootElement(doc);
-	
+
 	print_element_names(doc, root_element, buf);
 
 	xmlFreeDoc(doc);
@@ -110,7 +110,7 @@ void *thr_func()
 	pthread_exit(NULL);
 	free(buf);
 }
- 
+
 int main()
 {
 	pthread_t thr[NUM_THREADS];

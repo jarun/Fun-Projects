@@ -3,7 +3,7 @@
  * a cinema hall in a balanced way.
  *
  * Author: Arun Prakash Jana <engineerarun@gmail.com>
- * Copyright (C) 2014, 2015 by Arun Prakash Jana <engineerarun@gmail.com>
+ * Copyright (C) 2014 by Arun Prakash Jana <engineerarun@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -66,7 +66,7 @@ public:
 	}
 
 	void printDetails() {
-		cout << "A ticket was sold for Theater " << room_number << " which now has " 
+		cout << "A ticket was sold for Theater " << room_number << " which now has "
 			<< spectators << " spectators & " << capacity_filled << "% capacity." << endl;
 	}
 
@@ -81,7 +81,7 @@ public:
 
 int Theater::last_stage_booked = 0;
 
-/* Tempted to use TOTAL_ROOMS here but that would 
+/* Tempted to use TOTAL_ROOMS here but that would
    mean I have to use -std=c++11 as g++ option */
 Theater* rooms =  new Theater[8];
 
@@ -130,7 +130,7 @@ int main()
 
 	for (int i =0; i < 8; i++) {
 		rooms[i].setRoomNumber(i);
-	}	
+	}
 
 	cout.precision(4);
 
@@ -138,12 +138,12 @@ int main()
 		if (sell_ticket())
 			rooms[Theater::last_stage_booked].printDetails();
 		else
-			cout << "Error: HOUSEFULL!!!" << endl; 
+			cout << "Error: HOUSEFULL!!!" << endl;
 	}
 
 
 	for (int i = 0; i < TOTAL_ROOMS; i++)
-		cout << "Theater " << rooms[i].getRoomNumber() <<  " contains " << rooms[i].getSpectators() 
+		cout << "Theater " << rooms[i].getRoomNumber() <<  " contains " << rooms[i].getSpectators()
 			<< " customers. It is " << rooms[i].getCapacity() << "% full." << endl;
 
 	delete[] rooms;
